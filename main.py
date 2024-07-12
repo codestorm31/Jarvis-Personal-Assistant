@@ -47,13 +47,13 @@ def processCommand(c):
         webbrowser.open(f"https://www.google.com/search?q={c}")
 
 if __name__=="__main__":
-    speak("ab Good Day, Sir! I am Jarvis, your personal assistant. How can I assist you today?")
+    speak("Hello, Sir! I am Jarvis, your personal assistant. How can I assist you today?")
     #Listen for the wake word "Jarvis"
     while True:
         r = sr.Recognizer()
         print("Recognizing....")
 
-        # recognize speech using Sphinx
+        # recognize speech using Google
         try:
             with sr.Microphone() as source:
                 print("Listening...")
